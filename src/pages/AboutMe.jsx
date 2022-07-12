@@ -42,6 +42,12 @@ const AboutMe = () => {
           and JavaScript.
         </p>
       </div>
+      <div className="about-site">
+        <h3>About the Site</h3>
+        <p>
+          This site was created using ReactJS, React Router DOM, Bootstrap, and my vacation photos.
+        </p>
+      </div>
     </>
   )
 }

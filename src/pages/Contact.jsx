@@ -5,7 +5,7 @@ import gmailIcon from '../resources/gmail_icon.svg'
 import instagramIcon from '../resources/instagram_icon.svg'
 import linkedinIcon from '../resources/linkedin_icon.svg'
 
-import background from '../resources/honolulu_skyline.JPG'
+// import background from '../resources/honolulu_skyline.JPG'
 import './Contact.css'
 
 const Contact = () => {
