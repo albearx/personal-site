@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar bg="dark" variant="dark">
+        <Navbar fixed="top" bg="dark" variant="dark">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">About Me</Nav.Link>
             <Nav.Link as={Link} to="/projects">Projects</Nav.Link>

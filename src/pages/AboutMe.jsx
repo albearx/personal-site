@@ -16,10 +16,9 @@ const AboutMe = () => {
 
   return (
     <>
-      <div className="about-me-header">
-        <h1>Albert Xu</h1>
-      </div>
+      <div className="paintedladies"></div>
       <div className="greeting">
+        <h1>Albert Xu</h1>
         <h5>Good {timeofDay}, and welcome!</h5>
       </div>
       <div className="about-me-intro">
@@ -32,8 +31,9 @@ const AboutMe = () => {
           my favorite places and things.
         </p>
       </div>
+      <div className="sdcoast"></div>
       <div className="about-me-experience">
-        <h3>Experience</h3>
+        <h5>Experience</h5>
         <p>
           I have experience with writing Apex classes, triggers, and tests on the Salesforce platform.
           Languages and libraries I use for frontend include HTML/CSS and ReactJS, as well as 
@@ -42,12 +42,14 @@ const AboutMe = () => {
           and JavaScript.
         </p>
       </div>
+      <div className="costaricanresort"></div>
       <div className="about-site">
-        <h3>About the Site</h3>
+        <h5>About the Site</h5>
         <p>
           This site was created using ReactJS, React Router DOM, Bootstrap, and my vacation photos.
         </p>
       </div>
+      <div className="costaricansunset"></div>
     </>
   )
 }

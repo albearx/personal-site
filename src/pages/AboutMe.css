@@ -1,25 +1,55 @@
-.about-me-header {
-  text-align: left;
-  padding-top: 40px;
-  padding-left: 20px;
+.paintedladies {
+  background-image: url("../resources/paintedladies.JPG");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sdcoast {
+  background-image: url("../resources/sdcoastpano.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.costaricanresort {
+  background-image: url("../resources/costarica.JPG");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.costaricansunset {
+  background-image: url("../resources/costaricasunset.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .greeting {
   text-align: left;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 40px;
+  padding-left: 40px;
 }
 .about-me-intro {
   text-align: left;
   padding-top: 40px;
-  padding-left: 20px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 .about-me-experience {
   text-align: left;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 .about-site {
   text-align: left;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }

@@ -1,6 +1,10 @@
+import './Projects.css'
 const Projects = () => {
   return (
-    <h1>this site lol</h1>
+    <div className="projects-header">
+      <h1>Projects will be added here soon</h1>
+    </div>
+    
   )
 }
 export default Projects;
