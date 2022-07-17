@@ -1,9 +1,9 @@
 
-import facebookIcon from '../resources/facebook_icon.svg'
-import githubIcon from '../resources/github_icon.svg'
-import gmailIcon from '../resources/gmail_icon.svg'
-import instagramIcon from '../resources/instagram_icon.svg'
-import linkedinIcon from '../resources/linkedin_icon.svg'
+import facebookIcon from '../resources/icons/facebook_icon.svg'
+import githubIcon from '../resources/icons/github_icon.svg'
+import gmailIcon from '../resources/icons/gmail_icon.svg'
+import instagramIcon from '../resources/icons/instagram_icon.svg'
+import linkedinIcon from '../resources/icons/linkedin_icon.svg'
 
 // import background from '../resources/honolulu_skyline.JPG'
 import './Contact.css'

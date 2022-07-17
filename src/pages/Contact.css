@@ -1,14 +1,14 @@
 .contact-wrapper {
   
   /* background-color: red; */
-  background-image: url("../resources/oahu_beach.JPG");
+  text-align: center;
+  background-image: url("../../public/gallery/oahubeach.jpg");
   background-size: cover;
   padding-bottom: 300px;
   padding-top: 40px;
 }
 .contact-header {
-  margin: auto;
-  margin-top: 50px
+  margin-top: 100px
 }
 
 .socials {
@@ -16,5 +16,5 @@
   justify-content: space-between;
   max-width: 400px;
   margin: auto;
-  margin-top: 250px;
+  margin-top: 160px;
 }
