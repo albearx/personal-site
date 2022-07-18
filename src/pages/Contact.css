@@ -1,11 +1,10 @@
 .contact-wrapper {
   
-  /* background-color: red; */
   text-align: center;
   background-image: url("../../public/gallery/oahubeach.jpg");
   background-size: cover;
-  padding-bottom: 300px;
   padding-top: 80px;
+  height: 100vh;
 }
 .contact-header {
   margin-top: 100px
