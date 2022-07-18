@@ -38,7 +38,7 @@ const AboutMe = () => {
           I have experience with writing Apex classes, triggers, and tests on the Salesforce platform.
           Languages and libraries I use for frontend include HTML/CSS and ReactJS, as well as 
           using Axios for making HTTP requests to REST APIs.
-          Other programming languages I am familiar with include Java, C, Python,
+          Other programming languages I am proficient with include Java, C, Python,
           and JavaScript.
         </p>
       </div>
