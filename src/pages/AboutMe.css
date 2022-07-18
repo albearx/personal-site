@@ -1,8 +1,9 @@
 .paintedladies {
   background-image: url("../resources/backgrounds/paintedladies.JPG");
+  background-position: 0 80%;
   height: 400px;
   background-attachment: fixed;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
