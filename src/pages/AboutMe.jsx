@@ -24,7 +24,7 @@ const AboutMe = () => {
       <div className="about-me-intro">
         <h3>About Me</h3>
         <p>
-          I am currently a CS major doing my undergraduate studies at Purdue University.
+          I'm currently a CS major doing my undergraduate studies at Purdue University.
           When I'm not stressing over CS 250, I enjoy taking day trips around the Bay,
           travel (preferably to someplace tropical), and giving my dog (the goodest girl)
           whatever she wants. The photos on my site are intended to be a collage reflecting
