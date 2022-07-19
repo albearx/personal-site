@@ -4,167 +4,167 @@ import Gallery from 'react-photo-gallery'
 const Photos = () => {
   const photos = [
     {
-      src: '/gallery/49thst.jpg',
+      src: '/compressed-gallery/49thst.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/albertlittleisland.jpg',
+      src: '/compressed-gallery/albertlittleisland.jpg',
       width: 4,
       height: 3
     },
     {
-      src: '/gallery/albertoahu.jpg',
+      src: '/compressed-gallery/albertoahu.jpg',
       width: 3,
       height: 2
     },
     {
-      src: '/gallery/albertportrait.jpg',
+      src: '/compressed-gallery/albertportrait.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/alcatraz.jpg',
+      src: '/compressed-gallery/alcatraz.jpg',
       width: 1,
       height: 1
     },
     {
-      src: '/gallery/antelopecanyon.jpg',
+      src: '/compressed-gallery/antelopecanyon.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/azorescoast.jpg',
+      src: '/compressed-gallery/azorescoast.jpg',
       width: 4,
       height: 3
     },
     {
-      src: '/gallery/azorescoast2.jpg',
+      src: '/compressed-gallery/azorescoast2.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/azoreslakes.jpg',
+      src: '/compressed-gallery/azoreslakes.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/bryantpark.jpg',
+      src: '/compressed-gallery/bryantpark.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/cabonight.jpg',
+      src: '/compressed-gallery/cabonight.jpg',
       width: 133,
       height: 75
     },
     {
-      src: '/gallery/costarica.jpg',
+      src: '/compressed-gallery/costarica.jpg',
       width: 4,
       height: 3
     },
     {
-      src: '/gallery/costaricasunset.jpg',
+      src: '/compressed-gallery/costaricasunset.jpg',
       width: 4,
       height: 3
     },
     {
-      src: '/gallery/honolulunight.jpg',
+      src: '/compressed-gallery/honolulunight.jpg',
       width: 3,
       height: 2
     },
     {
-      src: '/gallery/jamaica.jpg',
+      src: '/compressed-gallery/jamaica.jpg',
       width: 233,
       height: 173
     },
     {
-      src: '/gallery/littleisland.jpg',
+      src: '/compressed-gallery/littleisland.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/littleislandnight.jpg',
+      src: '/compressed-gallery/littleislandnight.jpg',
       width: 4,
       height: 3
     },
     {
-      src: '/gallery/littleislandnightcoast.jpg',
+      src: '/compressed-gallery/littleislandnightcoast.jpg',
       width: 144,
       height: 109
     },
     {
-      src: '/gallery/littleislandsunset.jpg',
+      src: '/compressed-gallery/littleislandsunset.jpg',
       width: 4,
       height: 3
     },
     {
-      src: '/gallery/mainstfire.jpg',
+      src: '/compressed-gallery/mainstfire.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/met.jpg',
+      src: '/compressed-gallery/met.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/oahubeach.jpg',
+      src: '/compressed-gallery/oahubeach.jpg',
       width: 3,
       height: 2
     },
     {
-      src: '/gallery/oculus.jpg',
+      src: '/compressed-gallery/oculus.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/paintedladies.jpg',
+      src: '/compressed-gallery/paintedladies.jpg',
       width: 4,
       height: 3
     },
     {
-      src: '/gallery/palace.jpg',
+      src: '/compressed-gallery/palace.jpg',
       width: 4,
       height: 3
     },
     {
-      src: '/gallery/purduegym.jpg',
+      src: '/compressed-gallery/purduegym.jpg',
       width: 6,
       height: 11
     },
     {
-      src: '/gallery/sdcoast.jpg',
+      src: '/compressed-gallery/sdcoast.jpg',
       width: 403,
       height: 227
     },
     {
-      src: '/gallery/sdcoastpano.jpg',
+      src: '/compressed-gallery/sdcoastpano.jpg',
       width: 16350,
       height: 3858
     },
     {
-      src: '/gallery/sealion.jpg',
+      src: '/compressed-gallery/sealion.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/smores.jpg',
+      src: '/compressed-gallery/smores.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/smoresandmom.jpg',
+      src: '/compressed-gallery/smoresandmom.jpg',
       width: 3,
       height: 4
     },
     {
-      src: '/gallery/surf.jpg',
+      src: '/compressed-gallery/surf.jpg',
       width: 192,
       height: 128
     },
     {
-      src: '/gallery/waikikipano.jpg',
+      src: '/compressed-gallery/waikikipano.jpg',
       width: 16382,
       height: 3726
     }

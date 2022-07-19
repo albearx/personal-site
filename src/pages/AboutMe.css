@@ -1,5 +1,5 @@
 .paintedladies {
-  background-image: url("../resources/backgrounds/paintedladies.JPG");
+  background-image: url("../resources/compressed-background/paintedladies_1.JPG");
   background-position: 0 80%;
   height: 400px;
   background-attachment: fixed;
@@ -8,7 +8,7 @@
   background-size: cover;
 }
 .sdcoast {
-  background-image: url("../resources/backgrounds/sdcoastpano.jpg");
+  background-image: url("../resources/compressed-background/sdcoastpano_2.jpg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -16,7 +16,7 @@
   background-size: cover;
 }
 .costaricanresort {
-  background-image: url("../resources/backgrounds/costarica.JPG");
+  background-image: url("../resources/compressed-background/costarica_1.JPG");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -24,7 +24,7 @@
   background-size: cover;
 }
 .costaricansunset {
-  background-image: url("../resources/backgrounds/costaricasunset.jpg");
+  background-image: url("../resources/compressed-background/costaricasunset_1.jpg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
