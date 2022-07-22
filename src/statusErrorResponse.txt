@@ -1,0 +1,175 @@
+                    
+{
+  "status": 200,
+  "region": "na",
+  "data": {
+    "maintenances": [],
+    "incidents": [
+      {
+        "titles": [
+          {
+            "locale": "en_US",
+            "content": "Login Issues"
+          },
+          {
+            "locale": "ar_AE",
+            "content": "مشاكل في تسجيل الدخول"
+          },
+          {
+            "locale": "de_DE",
+            "content": "Probleme bei der Anmeldung"
+          },
+          {
+            "locale": "es_ES",
+            "content": "Problemas de inicio de sesión"
+          },
+          {
+            "locale": "es_MX",
+            "content": "Problemas para iniciar sesión"
+          },
+          {
+            "locale": "fr_FR",
+            "content": "Problèmes de connexion"
+          },
+          {
+            "locale": "id_ID",
+            "content": "Masalah Upaya Memasuki Game"
+          },
+          {
+            "locale": "it_IT",
+            "content": "Problemi di accesso"
+          },
+          {
+            "locale": "ja_JP",
+            "content": "ログインの問題"
+          },
+          {
+            "locale": "ko_KR",
+            "content": "로그인 문제"
+          },
+          {
+            "locale": "pl_PL",
+            "content": "Problemy z logowaniem"
+          },
+          {
+            "locale": "pt_BR",
+            "content": "Problemas de login"
+          },
+          {
+            "locale": "ru_RU",
+            "content": "Проблемы со входом в учетную запись"
+          },
+          {
+            "locale": "th_TH",
+            "content": "การลงชื่อเข้าใช้เกิดข้อผิดพลาด"
+          },
+          {
+            "locale": "tr_TR",
+            "content": "Giriş Yapma Sorunları"
+          },
+          {
+            "locale": "vi_VN",
+            "content": "Lỗi Đăng Nhập"
+          },
+          {
+            "locale": "zh_TW",
+            "content": "登入相關問題"
+          }
+        ],
+        "archive_at": null,
+        "platforms": [
+          "windows"
+        ],
+        "created_at": "2022-07-21T01:32:45.041658+00:00",
+        "maintenance_status": null,
+        "updated_at": null,
+        "id": 4983,
+        "updates": [
+          {
+            "publish_locations": [
+              "game",
+              "riotclient",
+              "riotstatus"
+            ],
+            "publish": true,
+            "created_at": "2022-07-21T01:32:45.132310+00:00",
+            "author": "Riot Games",
+            "updated_at": "2022-07-21T01:32:00+00:00",
+            "id": 8135,
+            "translations": [
+              {
+                "locale": "en_US",
+                "content": "We're aware of a problem causing login attempts to fail and are working on a fix."
+              },
+              {
+                "locale": "ar_AE",
+                "content": "نحن على علم بوجود مشكلة تتسبب في فشل محاولات تسجيل الدخول، ونعمل على التوصل إلى حل لها."
+              },
+              {
+                "locale": "de_DE",
+                "content": "Uns ist bekannt, dass Einloggversuche momentan fehlschlagen, und wir arbeiten bereits an einer Lösung des Problems."
+              },
+              {
+                "locale": "es_ES",
+                "content": "Somos conscientes de que existe un problema que provoca que los intentos de inicio de sesión fallen, y estamos trabajando para solucionarlo."
+              },
+              {
+                "locale": "es_MX",
+                "content": "Estamos al tanto de un problema que provoca fallas al intentar iniciar sesión y estamos trabajando en una solución."
+              },
+              {
+                "locale": "fr_FR",
+                "content": "Nous sommes conscients d'un problème entraînant un échec des tentatives de connexion, et nous travaillons à le corriger."
+              },
+              {
+                "locale": "id_ID",
+                "content": "Kami menyadari adanya masalah yang menyebabkan kegagalan upaya dalam memasuki game dan sedang memperbaikinya."
+              },
+              {
+                "locale": "it_IT",
+                "content": "Siamo a conoscenza di un problema che impedisce l'accesso e stiamo lavorando a una soluzione."
+              },
+              {
+                "locale": "ja_JP",
+                "content": "ゲームにログインできなくなる問題が発生しており、現在修正対応中です。"
+              },
+              {
+                "locale": "ko_KR",
+                "content": "로그인 시도 실패 문제가 확인되어 현재 해결 중입니다. 불편을 드려 죄송합니다."
+              },
+              {
+                "locale": "pl_PL",
+                "content": "Jesteśmy świadomi problemu z niepowodzeniem w logowaniu i pracujemy nad jego rozwiązaniem."
+              },
+              {
+                "locale": "pt_BR",
+                "content": "Estamos cientes das falhas ao fazer login e já estamos trabalhando em uma solução."
+              },
+              {
+                "locale": "ru_RU",
+                "content": "Мы знаем о проблеме, из-за которой не удается авторизоваться, и работаем над ее решением."
+              },
+              {
+                "locale": "th_TH",
+                "content": "พวกเราได้ทราบถึงปัญหาที่ทำให้เกิดข้อขัดข้องในการล็อกอินแล้ว และกำลังดำเนินการแก้ไข"
+              },
+              {
+                "locale": "tr_TR",
+                "content": "Giriş yapma denemelerinin başarısız olmasına yol açan sorundan haberdarız ve bunu çözmek için çalışıyoruz."
+              },
+              {
+                "locale": "vi_VN",
+                "content": "Chúng tôi đã nhận được báo lỗi về sự cố đăng nhập thất bại và đang tìm giải pháp khắc phục."
+              },
+              {
+                "locale": "zh_TW",
+                "content": "我們發現一個異常，導致登入失敗，目前正在全力修復。"
+              }
+            ]
+          }
+        ],
+        "incident_severity": "critical"
+      }
+    ]
+  }
+}
