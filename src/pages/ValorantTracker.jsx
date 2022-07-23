@@ -15,42 +15,6 @@ const ValorantTracker = () => {
 	const [playerMMR, setPlayerMMR] = useState()
 	const [playerMMRHistory, setPlayerMMRHistory] = useState()
 	const [matchHistory, setMatchHistory] = useState()
-
-	// useEffect(() => {
-	// 	axios.get(`https://api.henrikdev.xyz/valorant/v1/account/${player.username}/${player.tag}`).then(
-	// 		res => {
-	// 			let fetchedRecord = res.data
-	// 			console.log('player info', fetchedRecord)
-	// 			setPlayerInfo(fetchedRecord)
-	// 		}
-	// 	)
-		
-	// 	axios.get(`https://api.henrikdev.xyz/valorant/v1/mmr/na/${player.username}/${player.tag}`).then(
-	// 		res => {
-	// 			let fetchedRecord = res.data
-	// 			console.log('player\'s mmr', fetchedRecord)
-	// 			setPlayerMMR(fetchedRecord)
-	// 		}
-	// 	)
-
-	// 	axios.get(`https://api.henrikdev.xyz/valorant/v1/mmr-history/na/${player.username}/${player.tag}`).then(
-	// 		res => {
-	// 			let fetchedRecord = res.data
-	// 			console.log('player\'s mmr history', fetchedRecord)
-	// 			setPlayerMMRHistory(fetchedRecord)
-	// 		}
-	// 	)
-	// }, [player])
-
-	// useEffect(() => {
-	// 	axios.get(`https://api.henrikdev.xyz/valorant/v3/matches/na/${player.username}/${player.tag}?filter=${filter}`).then(
-	// 		res => {
-	// 			let fetchedRecord = res.data
-	// 			console.log('match history (5 games)', fetchedRecord)
-	// 			setMatchHistory(fetchedRecord)
-	// 		}
-	// 	)
-	// }, [player, filter])
 	
   useEffect(() => {
     const profileRequest = axios.get(`https://api.henrikdev.xyz/valorant/v1/account/${player.username}/${player.tag}`)
@@ -78,8 +42,6 @@ const ValorantTracker = () => {
 		let playerInfo = formDataObj.searchInput.split('#')
 		setPlayer({username: playerInfo[0], tag: playerInfo[1]})
 
-		// console.log('username', player.username)
-		// console.log('tag', player.tag)
     setLoading('Loading...')
 	}
 
@@ -87,22 +49,25 @@ const ValorantTracker = () => {
 	return (
 		<div className="valTrackerWrapper">
 			<h1>Valorant Tracker</h1>
-			<Row>
-				<Col>
-					<Form onSubmit={onFormSubmit}>
-						<Row>
-							<Col><Form.Control type="text" name="searchInput" defaultValue="AACommander#6432"/></Col>
-							<Col><Button variant="outline-success" type="submit">Submit</Button></Col>
-						</Row>
-					</Form>
-				</Col>
-				<Col>
-					<DropdownButton id="gamemode-filter" title="Gamemode" variant="secondary">
-						<Dropdown.Item as="button" onClick={() => setFilter('competitive')}>Competitive</Dropdown.Item>
-						<Dropdown.Item as="button" onClick={() => setFilter('unrated')}>Unrated</Dropdown.Item>
-					</DropdownButton>
-				</Col>
-			</Row>
+
+      <div className="searchBar">
+        <Row>
+          
+          <Form onSubmit={onFormSubmit}>
+            <Row>
+              <Col><Form.Control type="text" name="searchInput" defaultValue="AACommander#6432"/></Col>
+              <Col><Button variant="outline-success" type="submit">Submit</Button></Col>
+            </Row>
+          </Form>
+          
+        </Row>
+      </div>
+      <div className="filterDropdown">
+        <DropdownButton id="gamemode-filter" title="Gamemode" variant="secondary">
+					<Dropdown.Item as="button" onClick={() => setFilter('competitive')}>Competitive</Dropdown.Item>
+					<Dropdown.Item as="button" onClick={() => setFilter('unrated')}>Unrated</Dropdown.Item>
+				</DropdownButton>
+      </div>
 
       <div className="playerProfileWrapper">
         <p>{loading}<br /></p>
