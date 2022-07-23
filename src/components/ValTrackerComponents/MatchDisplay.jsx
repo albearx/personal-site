@@ -37,7 +37,7 @@ const MatchDisplay = ({ match, playerName, playerTag}) => {
 		rightScore = winnerRounds
 	}
 
-	console.log('match', match.metadata.map, playerInGame)
+	// console.log('match', match.metadata.map, playerInGame)
 	return(
 		<>
 			<div className={match.metadata.map} onClick={() => setShow(true)}>

@@ -28,16 +28,16 @@ const ValorantTracker = () => {
 
     axios.all([profileRequest, mmrRequest, mmrHistoryRequest, matchHistoryRequest]).then(axios.spread((...responses) => {
       setPlayerInfo(responses[0].data)
-      console.log('player info:', responses[0].data)
+      // console.log('player info:', responses[0].data)
       setPlayerMMR(responses[1].data)
-      console.log('player mmr:', responses[1].data)
+      // console.log('player mmr:', responses[1].data)
       setPlayerMMRHistory(responses[2].data)
-      console.log('player mmr history:', responses[2].data)
+      // console.log('player mmr history:', responses[2].data)
       setMatchHistory(responses[3].data)
-      console.log('match history:', responses[3].data)
+      // console.log('match history:', responses[3].data)
       setLoading('')
     })).catch(errors => {
-      console.log('errors caught')
+      // console.log('errors caught')
       setShow(true)
       return <b>Check to make sure the format is correct!</b>
     })
