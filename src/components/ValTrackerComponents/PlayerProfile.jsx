@@ -12,7 +12,7 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory}) 
 	let kd;
 	let kda;
 	let graphInfo;
-	let matches = [];
+	// let matches = [];
 
 	if (playerInfo && playerMMR && playerMMRHistory && matchHistory) {
 		let winCount = 0;

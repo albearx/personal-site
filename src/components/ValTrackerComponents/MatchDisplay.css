@@ -1,0 +1,57 @@
+.Ascent {
+	height: 64px;
+	width: 500px;
+	background-size: 500px 64px;
+	margin: 10px;
+	background-image: url('../../resources/map-banners/ascent-banner.jpeg');
+}
+.Bind {
+	height: 64px;
+	width: 500px;
+	background-size: 500px 64px;
+	margin: 10px;
+  background-image: url('../../resources/map-banners/bind-banner.jpeg');
+	
+}
+.Breeze {
+	height: 64px;
+	width: 500px;
+	background-size: 500px 64px;
+	margin: 10px;
+	background-image: url('../../resources/map-banners/breeze-banner.jpeg');
+}
+.Fracture {
+	height: 64px;
+	width: 500px;
+	background-size: 500px 64px;
+	margin: 10px;
+	background-image: url('../../resources/map-banners/fracture-banner.jpeg');
+}
+.Haven {
+	height: 64px;
+	width: 500px;
+	background-size: 500px 64px;
+	margin: 10px;
+	background-image: url('../../resources/map-banners/haven-banner.jpeg');
+}
+.Icebox {
+	height: 64px;
+	width: 500px;
+	background-size: 500px 64px;
+	margin: 10px;
+	background-image: url('../../resources/map-banners/icebox-banner.jpeg');
+}
+.Pearl {
+	height: 64px;
+	width: 500px;
+	background-size: 500px 64px;
+	margin: 10px;
+	background-image: url('../../resources/map-banners/pearl-banner.jpeg');
+}
+.Split {
+	height: 64px;
+	width: 500px;
+	background-size: 500px 64px;
+	margin: 10px;
+	background-image: url('../../resources/map-banners/split-banner.jpeg');
+}
