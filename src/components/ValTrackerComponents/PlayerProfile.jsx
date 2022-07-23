@@ -96,6 +96,8 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory}) 
 						formatter: function (value) {
 							let rankNum = Math.floor(value / 100)
 							let rr = value % 100
+							if (value >= 2500)
+								rr = value - 2500
 							let rank;
 							switch (rankNum) {
 								case 0:
@@ -174,6 +176,7 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory}) 
 									rank = 'Radiant'
 									break;
 								default:
+									rank = 'Radiant'
 									break;
 								
 							}
