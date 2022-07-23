@@ -26,6 +26,11 @@ img {
 	max-height: 100%;
 }
 .matchHistory {
+	margin: auto;
+	/* display: flex; */
+	/* justify-content: center; */
+}
+.mmrChart {
 	display: inline-block;
-	padding-left: 200px;
+	margin-left: 40px;
 }

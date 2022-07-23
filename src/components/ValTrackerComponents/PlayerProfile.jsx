@@ -173,6 +173,8 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory}) 
 								case 24:
 									rank = 'Radiant'
 									break;
+								default:
+									break;
 								
 							}
 							return `${rank}, ${rr} RR`;
@@ -186,36 +188,39 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory}) 
 	}
 
 	return playerInfo && playerMMR && playerMMRHistory && matchHistory ?
-	
-		<div className="playerProfile">
-			<div className="playerBanner">
-				<img alt="playerCard" src={playerInfo.data.card.large} />
-			</div>
-
-			<div className="playerOverview">
-				<div className="playerTitle">
-					<div className="playerName">
-						<h3>{playerInfo.data.name}#{playerInfo.data.tag}</h3>
-					</div>
-					<div className="playerRankIcon">
-						<img alt="playerRankIcon" src={`/rank-icons/${playerMMR.data.currenttierpatched.split(' ').join('_')}_Rank.png`}/>
-					</div>
+		<div className="playerWrapper">
+			<div className="playerProfile">
+				<div className="playerBanner">
+					<img alt="playerCard" src={playerInfo.data.card.large} />
 				</div>
-				
-				<p><small>Last updated {playerInfo.data.last_update}</small></p>
-				<p>
-					<font size="+1"><b>Account Level: </b>{playerInfo.data.account_level}</font><br />
-					<font size="+1"><b>Rank: </b>{`${playerMMR.data.currenttierpatched}, ${playerMMR.data.ranking_in_tier} RR`}</font>
-				</p>
 
-				<p><small><i>Displaying stats from player's most recent five matches</i></small></p>
-				<p>
-					<font size="+1"><b>Win Rate: </b>{winRate}</font><br />
-					<font size="+1"><b>Headshots: </b>{headshotRate}</font><br />
-					<font size="+1"><b>K/D: </b>{kd}</font><br />
-					<font size="+1"><b>KDA: </b>{kda}</font><br />
-				</p>
-				<Chart options={graphInfo.options} series={graphInfo.series} type="line" height={300} />
+				<div className="playerOverview">
+					<div className="playerTitle">
+						<div className="playerName">
+							<h3>{playerInfo.data.name}#{playerInfo.data.tag}</h3>
+						</div>
+						<div className="playerRankIcon">
+							<img alt="playerRankIcon" src={`/rank-icons/${playerMMR.data.currenttierpatched.split(' ').join('_')}_Rank.png`}/>
+						</div>
+					</div>
+					
+					<p><small>Last updated {playerInfo.data.last_update}</small></p>
+					<p>
+						<font size="+1"><b>Account Level: </b>{playerInfo.data.account_level}</font><br />
+						<font size="+1"><b>Rank: </b>{`${playerMMR.data.currenttierpatched}, ${playerMMR.data.ranking_in_tier} RR`}</font>
+					</p>
+
+					<p><small><i>Displaying stats from player's most recent five matches</i></small></p>
+					<p>
+						<font size="+1"><b>Win Rate: </b>{winRate}</font><br />
+						<font size="+1"><b>Headshots: </b>{headshotRate}</font><br />
+						<font size="+1"><b>K/D: </b>{kd}</font><br />
+						<font size="+1"><b>KDA: </b>{kda}</font><br />
+					</p>
+				</div>
+				<div className="mmrChart">
+					<Chart options={graphInfo.options} series={graphInfo.series} type="line" height={640} width={640} />
+				</div>
 			</div>
 			<div className="matchHistory">
 				{matchHistory.data.map(match => (

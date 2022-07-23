@@ -1,57 +1,106 @@
+/* new images should be ~256 by 2000 */
 .Ascent {
-	height: 64px;
-	width: 500px;
-	background-size: 500px 64px;
-	margin: 10px;
-	background-image: url('../../resources/map-banners/ascent-banner.jpeg');
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/ascent.jpg');
 }
 .Bind {
-	height: 64px;
-	width: 500px;
-	background-size: 500px 64px;
-	margin: 10px;
-  background-image: url('../../resources/map-banners/bind-banner.jpeg');
-	
+	height: 128px;
+	margin: 2px;
+  background-image: url('../../resources/map-banners/bind.jpg');
+	width: 100%;
+	background-size: cover;
+	/* display: flex; */
 }
 .Breeze {
-	height: 64px;
-	width: 500px;
-	background-size: 500px 64px;
-	margin: 10px;
-	background-image: url('../../resources/map-banners/breeze-banner.jpeg');
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/breeze.jpg');
 }
 .Fracture {
-	height: 64px;
-	width: 500px;
-	background-size: 500px 64px;
-	margin: 10px;
-	background-image: url('../../resources/map-banners/fracture-banner.jpeg');
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/fracture.jpg');
 }
 .Haven {
-	height: 64px;
-	width: 500px;
-	background-size: 500px 64px;
-	margin: 10px;
-	background-image: url('../../resources/map-banners/haven-banner.jpeg');
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/haven.jpg');
 }
 .Icebox {
-	height: 64px;
-	width: 500px;
-	background-size: 500px 64px;
-	margin: 10px;
-	background-image: url('../../resources/map-banners/icebox-banner.jpeg');
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/icebox.jpg');
 }
 .Pearl {
-	height: 64px;
-	width: 500px;
-	background-size: 500px 64px;
-	margin: 10px;
-	background-image: url('../../resources/map-banners/pearl-banner.jpeg');
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/pearl.jpg');
 }
 .Split {
-	height: 64px;
-	width: 500px;
-	background-size: 500px 64px;
-	margin: 10px;
-	background-image: url('../../resources/map-banners/split-banner.jpeg');
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/split.jpg');
+}
+/* img {
+	padding-left: 20px;
+} */
+.score {
+	text-align: center;
+	display: inline-block;
+	color: white;
+	padding-right: 20px;
+	width: 70%
+}
+.matchModal {
+	width: 60%;
+	max-width: 60% !important;
+}
+
+.agentFull {
+	float: left;
+	padding-bottom: 250;
+  margin-bottom: -250;
+}
+.matchInfo {
+	float: left;
+	padding-left: 20px;
+	padding-bottom: 250;
+  margin-bottom: -250;
+}
+.abilityCasts {
+	float: right;
+	/* display: inline-block; */
+	padding-right: 40px;
+	/* padding-bottom: px; */
+}
+.ability {
+	padding-bottom: 20px;
+}
+.abilityIcon {
+	float: left;
+	padding-bottom: 50;
+  margin-bottom: -50;
+	filter: brightness(0);
+}
+.castCounts {
+	float: left;
+	padding-bottom: 50;
+  margin-bottom: -50;
+	/* display: inline-block; */
+	padding-left: 8px;
 }

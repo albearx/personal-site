@@ -1,11 +1,15 @@
 import {useState, useEffect} from 'react'
 import {Row, Col, Form, Button, Dropdown, DropdownButton} from 'react-bootstrap'
+import Alert from 'react-bootstrap/Alert'
 import axios from 'axios'
 import PlayerProfile from '../components/ValTrackerComponents/PlayerProfile.jsx'
 
 import './ValorantTracker.css'
 
 const ValorantTracker = () => {
+  const [show, setShow] = useState(false)
+  const [error, setError] = useState()
+
   const [player, setPlayer] = useState({username: 'AACommander', tag: '6432'})
 	const [filter, setFilter] = useState('competitive')
 
@@ -32,7 +36,11 @@ const ValorantTracker = () => {
       setMatchHistory(responses[3].data)
       console.log('match history:', responses[3].data)
       setLoading('')
-    }))
+    })).catch(errors => {
+      console.log('errors caught')
+      setShow(true)
+      return <b>Check to make sure the format is correct!</b>
+    })
   }, [player, filter])
 	
 	const onFormSubmit = (e) => {
@@ -45,6 +53,20 @@ const ValorantTracker = () => {
     setLoading('Loading...')
 	}
 
+  if (show) {
+    return (
+      <div className="alert">
+        <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+          <Alert.Heading>There was an issue with your search.</Alert.Heading>
+          <p>
+            This is most likely due to your input being an incorrect format, but can
+            also mean the API is not responding. Please try again (later).
+          </p>
+        </Alert>
+      </div>
+      
+    )
+  }
 
 	return (
 		<div className="valTrackerWrapper">
@@ -68,7 +90,6 @@ const ValorantTracker = () => {
 					<Dropdown.Item as="button" onClick={() => setFilter('unrated')}>Unrated</Dropdown.Item>
 				</DropdownButton>
       </div>
-
       <div className="playerProfileWrapper">
         <p>{loading}<br /></p>
         <PlayerProfile playerInfo={playerInfo} playerMMR={playerMMR} playerMMRHistory={playerMMRHistory} matchHistory={matchHistory}/>
