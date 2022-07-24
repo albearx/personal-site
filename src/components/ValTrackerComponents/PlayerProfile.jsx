@@ -222,7 +222,7 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory, f
 					</p>
 				</div>
 				<div className="mmrChart">
-					<Chart options={graphInfo.options} series={graphInfo.series} type="line" height={640} width={640} />
+					<Chart options={graphInfo.options} series={graphInfo.series} type="line" height={640} width={600} />
 				</div>
 			</div>
 			<div className="matchHistory">
