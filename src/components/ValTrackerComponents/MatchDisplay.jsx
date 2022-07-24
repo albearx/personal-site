@@ -28,20 +28,29 @@ const MatchDisplay = ({ match, playerName, playerTag, filter}) => {
 	
 	let winningTeam;
 
-	let leftScore;
-	let rightScore;
+	let leftScore = match.teams[playerTeam.toLowerCase()].rounds_won
+	let rightScore = match.teams[playerTeam.toLowerCase()].rounds_lost
+
 	let result;
 
 	if (match.teams.blue.has_won)
-		winningTeam = "blue"
-	else
-		winningTeam = "red"
+		winningTeam = "Blue"
+	else if (match.teams.red.has_won)
+		winningTeam = "Red"
+	else {
+		winningTeam = "None"
+	}
 	
 	// winnerRounds = Math.max(match.teams.blue.rounds_lost, match.teams.blue.rounds_won)
 	// loserRounds = Math.min(match.teams.blue.rounds_lost, match.teams.blue.rounds_won)
 
-	if (playerTeam.toLowerCase() === winningTeam) {
+	// console.log(playerTeam.toLowerCase(), winningTeam.toLowerCase())
+	if (playerTeam.toLowerCase() === winningTeam.toLowerCase()) {
 		result = 'Victory'
+		// leftScore = winnerRounds
+		// rightScore = loserRounds
+	} else if (winningTeam === "None") {
+		result = 'Draw'
 		// leftScore = winnerRounds
 		// rightScore = loserRounds
 	} else {
@@ -50,8 +59,8 @@ const MatchDisplay = ({ match, playerName, playerTag, filter}) => {
 		// rightScore = winnerRounds
 	}
 
-	leftScore = match.teams[playerTeam.toLowerCase()].rounds_won
-	rightScore = match.teams[playerTeam.toLowerCase()].rounds_lost
+	// leftScore = match.teams[playerTeam.toLowerCase()].rounds_won
+	// rightScore = match.teams[playerTeam.toLowerCase()].rounds_lost
 
 	// console.log('match', match.metadata.map, playerInGame)
 	return(
