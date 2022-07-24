@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'tungsten';
+	src: local('tungsten'),
+	url('../../resources/fonts/tungsten.woff2') format('woff2');
+}
+
+.playerName {
+	font-family: 'tungsten';
+	font-size: 60px;
+}
 .playerBanner {
 	float: left;
   padding-bottom: 250;

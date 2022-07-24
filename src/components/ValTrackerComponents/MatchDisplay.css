@@ -1,65 +1,86 @@
+@font-face {
+	font-family: 'tungsten';
+	src: local('tungsten'),
+	url('../../resources/fonts/tungsten.woff2') format('woff2');
+}
 /* new images should be ~256 by 2000 */
 .Ascent {
+	font-family: 'tungsten';
 	height: 128px;
 	width: 100%;
 	background-size: cover;
 	margin: 2px;
 	background-image: url('../../resources/map-banners/ascent.jpg');
+	cursor: pointer;
 }
 .Bind {
+	font-family: 'tungsten';
 	height: 128px;
 	margin: 2px;
   background-image: url('../../resources/map-banners/bind.jpg');
 	width: 100%;
 	background-size: cover;
-	/* display: flex; */
+	cursor: pointer;
 }
 .Breeze {
+	font-family: 'tungsten';
 	height: 128px;
 	width: 100%;
 	background-size: cover;
 	margin: 2px;
 	background-image: url('../../resources/map-banners/breeze.jpg');
+	cursor: pointer;
 }
 .Fracture {
+	font-family: 'tungsten';
 	height: 128px;
 	width: 100%;
 	background-size: cover;
 	margin: 2px;
 	background-image: url('../../resources/map-banners/fracture.jpg');
+	cursor: pointer;
 }
 .Haven {
+	font-family: 'tungsten';
 	height: 128px;
 	width: 100%;
 	background-size: cover;
 	margin: 2px;
 	background-image: url('../../resources/map-banners/haven.jpg');
+	cursor: pointer;
 }
 .Icebox {
+	font-family: 'tungsten';
 	height: 128px;
 	width: 100%;
 	background-size: cover;
 	margin: 2px;
 	background-image: url('../../resources/map-banners/icebox.jpg');
+	cursor: pointer;
 }
 .Pearl {
+	font-family: 'tungsten';
 	height: 128px;
 	width: 100%;
 	background-size: cover;
 	margin: 2px;
 	background-image: url('../../resources/map-banners/pearl.jpg');
+	cursor: pointer;
 }
 .Split {
+	font-family: 'tungsten';
 	height: 128px;
 	width: 100%;
 	background-size: cover;
 	margin: 2px;
 	background-image: url('../../resources/map-banners/split.jpg');
+	cursor: pointer;
 }
 /* img {
 	padding-left: 20px;
 } */
 .score {
+	/* font-size: 80px; */
 	text-align: center;
 	display: inline-block;
 	color: white;

@@ -5,7 +5,7 @@ import moment from 'moment'
 import './PlayerProfile.css'
 
 
-const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory}) => {
+const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory, filter}) => {
 
 	let winRate;
 	let headshotRate;
@@ -200,7 +200,7 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory}) 
 				<div className="playerOverview">
 					<div className="playerTitle">
 						<div className="playerName">
-							<h3>{playerInfo.data.name}#{playerInfo.data.tag}</h3>
+							{`${playerInfo.data.name}#${playerInfo.data.tag}`.toUpperCase()}
 						</div>
 						<div className="playerRankIcon">
 							<img alt="playerRankIcon" src={`/rank-icons/${playerMMR.data.currenttierpatched.split(' ').join('_')}_Rank.png`}/>
@@ -227,7 +227,7 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory}) 
 			</div>
 			<div className="matchHistory">
 				{matchHistory.data.map(match => (
-					<MatchDisplay key={match.metadata.matchid} match={match} playerName={playerInfo.data.name} playerTag={playerInfo.data.tag}/>
+					<MatchDisplay key={match.metadata.matchid} match={match} playerName={playerInfo.data.name} playerTag={playerInfo.data.tag} filter={filter}/>
 				))}
 			</div>
 		</div>

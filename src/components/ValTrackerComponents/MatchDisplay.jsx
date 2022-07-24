@@ -3,7 +3,21 @@ import Modal from 'react-bootstrap/Modal'
 import './MatchDisplay.css'
 import AgentIcons from './AgentIcons.jsx'
 
-const MatchDisplay = ({ match, playerName, playerTag}) => {
+const MatchDisplay = ({ match, playerName, playerTag, filter}) => {
+	function millisConversion(millis) {
+		var minutes = Math.floor(millis / 60000);
+		var seconds = ((millis % 60000) / 1000).toFixed(0);
+		return minutes + " minutes " + seconds + " seconds";
+	}
+	const matchStartTime = (new Date(match.metadata.game_start * 1000)).toLocaleString()
+	const gameDuration = millisConversion(match.metadata.game_length)
+	const filterName = filter.charAt(0).toUpperCase() + filter.slice(1)
+	const matchOverviewStr = `${filterName} game on ${matchStartTime} \nthat lasted ${gameDuration}`
+
+	console.log(match)
+	console.log(matchStartTime, gameDuration, filterName)
+
+	//If modal should show or not
 	const [show, setShow] = useState(false)
 
 	const playerInGame = match.players.all_players.find(player => (player.name === playerName && player.tag === playerTag))
@@ -11,31 +25,33 @@ const MatchDisplay = ({ match, playerName, playerTag}) => {
 	const playerTeam = playerInGame.team;
 	const cleanAgentName = playerInGame.character.split('/').join('').toLowerCase()
 	
+	
 	let winningTeam;
-	let winnerRounds;
-	let loserRounds;
 
 	let leftScore;
 	let rightScore;
 	let result;
 
 	if (match.teams.blue.has_won)
-		winningTeam = "Blue"
+		winningTeam = "blue"
 	else
-		winningTeam = "Red"
+		winningTeam = "red"
 	
-	winnerRounds = Math.max(match.teams.blue.rounds_lost, match.teams.blue.rounds_won)
-	loserRounds = Math.min(match.teams.blue.rounds_lost, match.teams.blue.rounds_won)
+	// winnerRounds = Math.max(match.teams.blue.rounds_lost, match.teams.blue.rounds_won)
+	// loserRounds = Math.min(match.teams.blue.rounds_lost, match.teams.blue.rounds_won)
 
-	if (playerTeam === winningTeam) {
+	if (playerTeam.toLowerCase() === winningTeam) {
 		result = 'Victory'
-		leftScore = winnerRounds
-		rightScore = loserRounds
+		// leftScore = winnerRounds
+		// rightScore = loserRounds
 	} else {
 		result = 'Defeat'
-		leftScore = loserRounds
-		rightScore = winnerRounds
+		// leftScore = loserRounds
+		// rightScore = winnerRounds
 	}
+
+	leftScore = match.teams[playerTeam.toLowerCase()].rounds_won
+	rightScore = match.teams[playerTeam.toLowerCase()].rounds_lost
 
 	// console.log('match', match.metadata.map, playerInGame)
 	return(
@@ -43,7 +59,8 @@ const MatchDisplay = ({ match, playerName, playerTag}) => {
 			<div className={match.metadata.map} onClick={() => setShow(true)}>
 				<img alt={playerInGame.character} src={agentIcon} />
 				<div className="score">
-					<font size="+5"><b>{leftScore}-{rightScore}</b></font>
+					<font size="+4"><b>{leftScore}-{rightScore}</b></font>
+					{/* {leftScore}-{rightScore} */}
 				</div>
 			</div>
 
@@ -64,6 +81,7 @@ const MatchDisplay = ({ match, playerName, playerTag}) => {
 						<img className="agentFull" height="400" alt="agent-fullbody" src={AgentIcons[cleanAgentName].full} />
 						<div className="matchInfo">
 							<p>
+								<small><i>{matchOverviewStr}</i></small><br />
 								<b>Map: </b>{match.metadata.map}<br />
 								<b>Agent: </b>{playerInGame.character}<br />
 								<b>Result: </b>{result}<br />

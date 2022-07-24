@@ -8,7 +8,7 @@ import './ValorantTracker.css'
 
 const ValorantTracker = () => {
   const [show, setShow] = useState(false)
-  const [error, setError] = useState()
+  // const [error, setError] = useState()
 
   const [player, setPlayer] = useState({username: 'AACommander', tag: '6432'})
 	const [filter, setFilter] = useState('competitive')
@@ -92,7 +92,7 @@ const ValorantTracker = () => {
       </div>
       <div className="playerProfileWrapper">
         <p>{loading}<br /></p>
-        <PlayerProfile playerInfo={playerInfo} playerMMR={playerMMR} playerMMRHistory={playerMMRHistory} matchHistory={matchHistory}/>
+        <PlayerProfile playerInfo={playerInfo} playerMMR={playerMMR} playerMMRHistory={playerMMRHistory} matchHistory={matchHistory} filter={filter}/>
       </div>
       
 			
