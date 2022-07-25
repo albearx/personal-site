@@ -85,7 +85,7 @@ const ValorantTracker = () => {
         </Row>
       </div>
       <div className="filterDropdown">
-        <DropdownButton id="gamemode-filter" title="Gamemode" variant="secondary">
+        <DropdownButton id="gamemode-filter" title={`Gamemode: ${filter.charAt(0).toUpperCase() + filter.slice(1)}`} variant="secondary">
 					<Dropdown.Item as="button" onClick={() => setFilter('competitive')}>Competitive</Dropdown.Item>
 					<Dropdown.Item as="button" onClick={() => setFilter('unrated')}>Unrated</Dropdown.Item>
 				</DropdownButton>

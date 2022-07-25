@@ -14,7 +14,7 @@ const MatchDisplay = ({ match, playerName, playerTag, filter}) => {
 	const filterName = filter.charAt(0).toUpperCase() + filter.slice(1)
 	const matchOverviewStr = `${filterName} game on ${matchStartTime} \nthat lasted ${gameDuration}`
 
-	// console.log(match)
+	console.log(match)
 	// console.log(matchStartTime, gameDuration, filterName)
 
 	//If modal should show or not
