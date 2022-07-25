@@ -6,15 +6,31 @@ import './PlayerProfile.css'
 
 
 const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory, filter}) => {
+	// console.log(playerMMR)
+	let iconSrc;
+	let rankStr;
 
 	let winRate;
 	let headshotRate;
 	let kd;
 	let kda;
 	let graphInfo;
-	// let matches = [];
+	
 
 	if (playerInfo && playerMMR && playerMMRHistory && matchHistory) {
+		if (! playerMMR.data.currenttierpatched) {
+			// console.log('player is unranked')
+			iconSrc = `/rank-icons/unranked.png`
+			rankStr = 'Unranked'
+		}
+		else {
+			// console.log(playerMMR.data.currenttierpatched)
+			// console.log('player is ranked')
+			iconSrc = `/rank-icons/${playerMMR.data.currenttierpatched.split(' ').join('_')}_Rank.png`
+			rankStr = `${playerMMR.data.currenttierpatched}, ${playerMMR.data.ranking_in_tier} RR`
+		}
+			
+
 		let winCount = 0;
 
 		let headshots = 0;
@@ -24,6 +40,7 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory, f
 		let deaths = 0;
 		let assists = 0;
 
+		// let iconSrc = `/rank-icons/${playerMMR.data.currenttierpatched.split(' ').join('_')}_Rank.png`
 		//Iterates through all (5) matches of player's match history
 		for (const match of matchHistory.data) {
 			//Focuses on the selected player within the match
@@ -203,17 +220,17 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory, f
 							{`${playerInfo.data.name}#${playerInfo.data.tag}`.toUpperCase()}
 						</div>
 						<div className="playerRankIcon">
-							<img alt="playerRankIcon" src={`/rank-icons/${playerMMR.data.currenttierpatched.split(' ').join('_')}_Rank.png`}/>
+							<img alt="playerRankIcon" src={iconSrc}/>
 						</div>
 					</div>
 					
 					<p><small>Last updated {playerInfo.data.last_update}</small></p>
 					<p>
 						<font size="+1"><b>Account Level: </b>{playerInfo.data.account_level}</font><br />
-						<font size="+1"><b>Rank: </b>{`${playerMMR.data.currenttierpatched}, ${playerMMR.data.ranking_in_tier} RR`}</font>
+						<font size="+1"><b>Rank: </b>{rankStr}</font>
 					</p>
 
-					<p><small><i>Displaying stats from player's most recent five matches</i></small></p>
+					<p><small><i>Displaying stats from player's last five {filter} matches</i></small></p>
 					<p>
 						<font size="+1"><b>Win Rate: </b>{winRate}</font><br />
 						<font size="+1"><b>Headshots: </b>{headshotRate}</font><br />
