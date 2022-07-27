@@ -50,8 +50,11 @@ const PlayerProfile = ({playerInfo, playerMMR, playerMMRHistory, matchHistory, f
 			let winner;
 			if (match.teams.blue.has_won)
 				winner = 'Blue'
-			else
+			else if (match.teams.red.has_won)
 				winner = 'Red'
+			else 
+				winner = 'None'
+
 			if (playerInGame.team === winner) 
 				winCount++
 			
