@@ -140,8 +140,19 @@ const MatchDisplay = ({ match, playerName, playerTag, filter}) => {
 								</div>
 							</div>
 						</div>
+						<div className="bluePlayers">
+							<b>Blue Team:</b><br />
+							{match.players.blue.map(bluePlayer => (
+								<div>{`${bluePlayer.name}#${bluePlayer.tag}`}</div>
+							))}
+						</div>
+						<div className="redPlayers">
+							<b>Red Team:</b><br />
+							{match.players.red.map(redPlayer => (
+								<div>{`${redPlayer.name}#${redPlayer.tag}`}</div>
+							))}
+						</div>
 					</div>
-					
         </Modal.Body>
       </Modal>
 		</>
