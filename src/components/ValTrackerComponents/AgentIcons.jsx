@@ -41,6 +41,13 @@ const AgentIcons = {
 		c: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc12f51743ac56940/625db87d7e7b344b2534f838/Fade_-_C_-_Prowler.png',
 		x: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt70f96353cf61d295/625db8887e7b344b2534f83c/Fade_-_X_-_Nightfall.png'
 	},
+	harbor: {
+		full: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt81e8a3e8c7beeaf3/634894a15e281916980f655b/Harbor_KeyArt-web.png',
+		q: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc713955823a626c5/6348a9e8dc111e1f95032df0/TX_Mage_WaterWall.png',
+		e: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta7b530a6396a2fee/6348a9e88473831f96bbc3ab/TX_Mage_ShieldGrenade.png',
+		c: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8f7e1a26b7bae10b/6348a9e8e9d2c541844df812/TX_Mage_TidalWave.png',
+		x: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltba6bb33d886bfa80/6348a9e85e281916980f657d/TX_Mage_Tempest.png'
+	},
 	jett: {
 		full: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltceaa6cf20d328bd5/5eb7cdc1b1f2e27c950d2aaa/V_AGENTS_587x900_Jett.png',
 		q: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltce7928301a67a33a/5eaf861103f6e72ff388cc20/TX_Jett_Q.png',
