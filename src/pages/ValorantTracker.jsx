@@ -59,8 +59,12 @@ const ValorantTracker = () => {
         <Alert variant="danger" onClose={() => setShow(false)} dismissible>
           <Alert.Heading>There was an issue with your search.</Alert.Heading>
           <p>
-            This is most likely due to your input being an incorrect format, but can
-            also mean the API is not responding. Please try again (later).
+            This is could be due to your input being an incorrect format,
+            but can also be due to the player having not been recently active, or
+            the API is not responding. To be honest, in some really weird cases
+            that I haven't figured out yet it'll throw this error for no reason.
+            If your searched player has played recently and you're sure you entered their
+            name right, please try again. You should give up after maybe three tries.
           </p>
         </Alert>
       </div>
