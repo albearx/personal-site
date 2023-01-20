@@ -52,6 +52,14 @@
 	background-image: url('../../resources/map-banners/icebox.jpg');
 	cursor: pointer;
 }
+.Lotus {
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/lotus.jpg');
+	cursor: pointer;
+}
 .Pearl {
 	height: 128px;
 	width: 100%;
