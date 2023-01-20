@@ -1,3 +1,5 @@
+//when adding new agents, inspect official site source for ability icons and full agent art. right click image and click 'inspect' to go to its div in inspect element.
+
 const AgentIcons = {
 	astra: {
 		full: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5599d0d810824279/6036ca30ce4a0d12c3ec1dfa/V_AGENTS_587x900_Astra.png',
