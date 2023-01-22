@@ -1,4 +1,4 @@
-//when adding new agents, inspect official site source for ability icons and full agent art. right click image and click 'inspect' to go to its div in inspect element.
+//when adding new agents, inspect official site source for ability icons and full agent art. right click image and click 'inspect' to go to its div in inspect element
 
 const AgentIcons = {
 	astra: {
