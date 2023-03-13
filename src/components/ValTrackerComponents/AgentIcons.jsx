@@ -1,5 +1,5 @@
-//when adding new agents, inspect official site source for ability icons and full agent art. right click image and click 'inspect' to go to its div in inspect element
-
+// when adding new agents, inspect official site source for ability icons and full agent art. right click image and click 'inspect' to go to its div in inspect element
+// https://playvalorant.com/en-us/agents/
 const AgentIcons = {
 	astra: {
 		full: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5599d0d810824279/6036ca30ce4a0d12c3ec1dfa/V_AGENTS_587x900_Astra.png',
@@ -42,6 +42,13 @@ const AgentIcons = {
 		e: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltff792b334e149272/625db875fd9afd4b1fe2fbf2/Fade_-_E_-_Haunt.png',
 		c: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc12f51743ac56940/625db87d7e7b344b2534f838/Fade_-_C_-_Prowler.png',
 		x: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt70f96353cf61d295/625db8887e7b344b2534f83c/Fade_-_X_-_Nightfall.png'
+	},
+	gekko: {
+		full: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc942933be01094ae/6402724fe9f75310481c3851/V_AGENTS_587x900_Gekko2.png',
+		q: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt84c8955357322ecd/64027318ec12cd34d0060449/Gekko_ability_Icon_Wingman_.png',
+		e: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt09558f0cb6be03a3/6402737a27ccd11087ac6a70/Gekko_ability_Icon_3.png',
+		c: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb04bcc15680583e4/640273e5aa6c3f7f594bd1cf/Gekko_icon_mosh.png',
+		x: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb24321feccb0cb69/6402740fba95fe6a2554b0b5/Gekko_ability_icon_4.png'
 	},
 	harbor: {
 		full: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt81e8a3e8c7beeaf3/634894a15e281916980f655b/Harbor_KeyArt-web.png',
