@@ -10,5 +10,5 @@ To start the app on `localhost:3000`, run
 
 which runs the app in development mode.
 
-The website itself is currently hosted on Netlify at https://albearx.xyz, which is configured to rebuild itself upon
+The website itself is currently hosted on Netlify at https://albearx.netlify.app, which is configured to rebuild itself upon
 updates of this repository.
