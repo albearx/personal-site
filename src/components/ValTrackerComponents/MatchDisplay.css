@@ -76,6 +76,15 @@
 	background-image: url('../../resources/map-banners/split.jpg');
 	cursor: pointer;
 }
+
+.Sunset {
+	height: 128px;
+	width: 100%;
+	background-size: cover;
+	margin: 2px;
+	background-image: url('../../resources/map-banners/sunset.jpg');
+	cursor: pointer;
+}
 /* img {
 	padding-left: 20px;
 } */
