@@ -36,6 +36,13 @@ const AgentIcons = {
 		c: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6397bce97bdb0ecd/5eaf85fef66b2515dea76b32/TX_Cypher_C.png',
 		x: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltcf313af5404f8f80/5eaf85fee6f6795e530a2711/TX_Cypher_X.png'
 	},
+	deadlock: {
+		full: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt59125f966df76a27/649492a5a02402d20ee6900e/Deadlock-KeyArt.png',
+		q: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt677b0f1d6e3abf28/649494110c2cfd52495ca1c5/Deadlock_Ability_Q-SonicSensor.png',
+		e: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8638ac21c5116da2/649494294b0b0762874c731b/Deadlock_Ability_E-BarrierMesh.png',
+		c: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt4ed2dee8c9c0510f/649494424b0b0738f74c731f/Deadlock_Ability_C-GravNet.png',
+		x: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6f1fa29d96de5645/64949451351929b6dff37fd4/Deadlock_Ability_X-Annihilation.png'
+	},
 	fade: {
 		full: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt516d37c6c84fcda0/625db737c9aa404b76ddd594/Fade_Key_Art_587x900_for_Website.png',
 		q: 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt80d49ffb1f533029/625db8131574214ead41fc2f/Fade_-_Q_-_Seize.png',
